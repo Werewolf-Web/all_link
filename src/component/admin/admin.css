@@ -1,0 +1,174 @@
+.admin-panel {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .admin-panel {
+    grid-template-columns: 340px 1fr;
+  }
+}
+
+.admin-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(20, 33, 61, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.admin-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.status-banner {
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  font-weight: 600;
+}
+
+.status-banner.success {
+  background: rgba(27, 197, 125, 0.15);
+  color: #0d7a4f;
+}
+
+.status-banner.error {
+  background: rgba(244, 67, 54, 0.15);
+  color: #b4140f;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-field span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(19, 24, 44, 0.75);
+}
+
+.form-field input {
+  border-radius: 12px;
+  border: 1px solid rgba(19, 24, 44, 0.15);
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-field input:focus {
+  outline: none;
+  border-color: rgba(0, 13, 255, 0.55);
+  box-shadow: 0 0 0 4px rgba(0, 13, 255, 0.15);
+}
+
+.empty-state {
+  color: rgba(19, 24, 44, 0.6);
+  font-size: 0.95rem;
+}
+
+.admin-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-list-item {
+  background: rgba(241, 244, 255, 0.7);
+  border-radius: 16px;
+  padding: 1.25rem;
+}
+
+.admin-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.editor-fields {
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .editor-fields {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.editor-fields input {
+  border-radius: 12px;
+  border: 1px solid rgba(19, 24, 44, 0.15);
+  padding: 0.6rem 0.75rem;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.admin-item {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .admin-item {
+    grid-template-columns: 160px 1fr;
+  }
+}
+
+.item-visual {
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(19, 24, 44, 0.08);
+}
+
+.item-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.item-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.item-copy h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.item-link {
+  color: #000dff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+.item-link:hover {
+  text-decoration: underline;
+}
+
+.item-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}

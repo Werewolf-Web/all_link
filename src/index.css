@@ -1,0 +1,102 @@
+:root {
+  font-family: 'Poppins', 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #13182c;
+  background-color: #f5f7ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: transparent;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.primary-action {
+  border: none;
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  color: #ffffff;
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.primary-action:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(0, 13, 255, 0.25);
+}
+
+.ghost-action {
+  border: 1px solid rgba(19, 24, 44, 0.2);
+  background: transparent;
+  color: #13182c;
+  padding: 0.55rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, border 0.2s ease;
+}
+
+.ghost-action:hover {
+  background: rgba(19, 24, 44, 0.07);
+  border-color: rgba(19, 24, 44, 0.35);
+}
+
+.danger-action {
+  border: none;
+  background: linear-gradient(135deg, #ff5c5c, #d21414);
+  color: #ffffff;
+  padding: 0.55rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.danger-action:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(210, 20, 20, 0.28);
+}
+
+.outline-button {
+  border: 1px solid rgba(0, 13, 255, 0.55);
+  background: transparent;
+  color: #000dff;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.outline-button:hover {
+  background: rgba(0, 13, 255, 0.08);
+  color: #0006c6;
+}
+
+.watch-button {
+  border: none;
+  background: rgba(0, 13, 255, 0.92);
+  color: #ffffff;
+  padding: 0.65rem 1.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.watch-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 15px 35px rgba(0, 13, 255, 0.35);
+}
+
+a {
+  color: inherit;
+}
